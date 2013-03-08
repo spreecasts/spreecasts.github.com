@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://spreecasts.github.com/sitemap.xml 
