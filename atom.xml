@@ -4,7 +4,7 @@
   <title><![CDATA[SpreeCasts]]></title>
   <link href="http://spreecasts.github.com/atom.xml" rel="self"/>
   <link href="http://spreecasts.github.com/"/>
-  <updated>2013-03-13T14:45:17+01:00</updated>
+  <updated>2013-03-13T16:21:17+01:00</updated>
   <id>http://spreecasts.github.com/</id>
   <author>
     <name><![CDATA[Peter Berkenbosch]]></name>
@@ -12,6 +12,86 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Episode 6 - part 1 - setup Spree 1-3-stable]]></title>
+    <link href="http://spreecasts.github.com/blog/2013/03/13/episode-6-part-1-setup-spree-1-3-stable/"/>
+    <updated>2013-03-13T15:42:00+01:00</updated>
+    <id>http://spreecasts.github.com/blog/2013/03/13/episode-6-part-1-setup-spree-1-3-stable</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<p><video id="video1" class="sublime" width="960" height="600" data-autoresize="none" data-uid="ep6-part1" data-name="Episode 6 - part 1 - setup Spree 1-3-stable" preload="none">
+  <source src="http://spreecommerce.tv.s3.amazonaws.com/spreecasts-ep6-part-1.mp4" data-quality="hd" />
+</video></p>
+
+<h2>Shownotes</h2>
+
+<p>ruby 1.9.3, I use <a href="https://github.com/sstephenson/rbenv">rbenv</a></p>
+
+<p>Install Rails and ImageMagick</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails
+</span><span class='line'>brew install imagemagick</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Create a new rails app with ActiveRecord and rSpec</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails new mtgspree -m http://railswizard.org/fb4911f700fd7f21213d.rb -T</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Add <a href="https://github.com/spree/spree/tree/1-3-stable">spree 1-3-stable</a> branch to Gemfile.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem "spree", github: "spree/spree", branch: "1-3-stable"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Run the install generator, skip the sample data.</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails g spree:install --sample=false</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Add <a href="https://github.com/spree/spree_auth_devise/tree/1-3-stable">spree_auth_devise 1-3-stable</a> branch to Gemfile</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem 'spree_auth_devise', github: "spree/spree_auth_devise", branch: "1-3-stable"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Install and run the migrations</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake railties:install:migrations
+</span><span class='line'>rake db:migrate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>You can also run</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake spree_auth:install:migrations 
+</span><span class='line'>rake db:migrate</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Set the correct user_class in config/initializers/spree.rb</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>Spree.user_class = "Spree::User"</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Create an admin user</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rake spree_auth:admin:create</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next episode will focus on deploying this application to <a href="http://www.digitalocean.com">DigitalOcean</a> using <a href="http://www.cloud66.com">Cloud66</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Spree E-Commerce Shop from scratch to deployment - series]]></title>

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: spree-1-3 | SpreeCasts]]></title>
   <link href="http://spreecasts.github.com/blog/categories/spree-1-3/atom.xml" rel="self"/>
   <link href="http://spreecasts.github.com/"/>
-  <updated>2013-03-13T14:45:17+01:00</updated>
+  <updated>2013-03-13T16:21:17+01:00</updated>
   <id>http://spreecasts.github.com/</id>
   <author>
     <name><![CDATA[Peter Berkenbosch]]></name>
@@ -12,6 +12,73 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Episode 6 - part 1 - setup Spree 1-3-stable]]></title>
+    <link href="http://spreecasts.github.com/blog/2013/03/13/episode-6-part-1-setup-spree-1-3-stable/"/>
+    <updated>2013-03-13T15:42:00+01:00</updated>
+    <id>http://spreecasts.github.com/blog/2013/03/13/episode-6-part-1-setup-spree-1-3-stable</id>
+    <content type="html"><![CDATA[<!-- more -->
+
+
+<p><video id="video1" class="sublime" width="960" height="600" data-autoresize="none" data-uid="ep6-part1" data-name="Episode 6 - part 1 - setup Spree 1-3-stable" preload="none">
+  <source src="http://spreecommerce.tv.s3.amazonaws.com/spreecasts-ep6-part-1.mp4" data-quality="hd" />
+</video></p>
+
+<h2>Shownotes</h2>
+
+<p>ruby 1.9.3, I use <a href="https://github.com/sstephenson/rbenv">rbenv</a></p>
+
+<p>Install Rails and ImageMagick
+<code>
+gem install rails
+brew install imagemagick
+</code></p>
+
+<p>Create a new rails app with ActiveRecord and rSpec
+<code>
+rails new mtgspree -m http://railswizard.org/fb4911f700fd7f21213d.rb -T
+</code></p>
+
+<p>Add <a href="https://github.com/spree/spree/tree/1-3-stable">spree 1-3-stable</a> branch to Gemfile.
+<code>
+gem "spree", github: "spree/spree", branch: "1-3-stable"
+</code>
+Run the install generator, skip the sample data.
+<code>
+rails g spree:install --sample=false
+</code></p>
+
+<p>Add <a href="https://github.com/spree/spree_auth_devise/tree/1-3-stable">spree_auth_devise 1-3-stable</a> branch to Gemfile
+<code>
+gem 'spree_auth_devise', github: "spree/spree_auth_devise", branch: "1-3-stable"
+</code>
+Install and run the migrations
+<code>
+rake railties:install:migrations
+rake db:migrate
+</code></p>
+
+<p>You can also run
+<code>
+rake spree_auth:install:migrations
+rake db:migrate
+</code></p>
+
+<p>Set the correct user_class in config/initializers/spree.rb</p>
+
+<p><code>
+Spree.user_class = "Spree::User"
+</code></p>
+
+<p>Create an admin user
+<code>
+rake spree_auth:admin:create
+</code></p>
+
+<p>Next episode will focus on deploying this application to <a href="http://www.digitalocean.com">DigitalOcean</a> using <a href="http://www.cloud66.com">Cloud66</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Spree E-Commerce Shop from scratch to deployment - series]]></title>
