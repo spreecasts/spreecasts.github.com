@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: basics | SpreeCasts]]></title>
+  <link href="http://spreecasts.github.com/blog/categories/basics/atom.xml" rel="self"/>
+  <link href="http://spreecasts.github.com/"/>
+  <updated>2013-03-13T12:49:02+01:00</updated>
+  <id>http://spreecasts.github.com/</id>
+  <author>
+    <name><![CDATA[Peter Berkenbosch]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Spree E-Commerce Shop from scratch to deployment - series]]></title>
+    <link href="http://spreecasts.github.com/blog/2013/03/13/spree-e-commerce-shop-from-scratch-to-deployment-series/"/>
+    <updated>2013-03-13T12:00:00+01:00</updated>
+    <id>http://spreecasts.github.com/blog/2013/03/13/spree-e-commerce-shop-from-scratch-to-deployment-series</id>
+    <content type="html"><![CDATA[<p>After a few months the SpreeCasts show will continue! This time we will build a shop from scratch til deployment and further.</p>
+
+<!-- more -->
+
+
+<p>The shop will be the base shop for all future episodes and will be 100% open source. The shop will be selling <a href="http://www.wizards.com/Magic/TCG/Default.aspx">Magic the Gathering</a> cards and will be hosted at <a href="http://mtgspree.nl">MtG Spree</a>.</p>
+
+<p>In the first episode I will create a 1.3 Spree shop using the gems from git for Spree and for the spree_auth_devise extension as well.</p>
+
+<p>The next episode will show you how to deploy this shop to a number of blazing fast servers at <a href="http://digitalocean.com">Digital Ocean</a>using <a href="http://www.cloud66.com">Cloud66</a></p>
+
+<p>I will be using PostgreSQL as the database using <a href="http://postgresapp.com">Postgresapp</a> and rSpec for testing.</p>
+
+<p>Feel free to add suggestions and request in the comments for the future episodes.</p>
+]]></content>
+  </entry>
+  
+</feed>

@@ -1,15 +1,25 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
+        <loc>
+            http://spreecasts.github.com/blog/2013/03/13/spree-e-commerce-shop-from-scratch-to-deployment-series/
+        </loc>
+        <lastmod>2013-03-13T12:48:21+01:00</lastmod>
+    </url>
+    <url>
+        <loc>http://spreecasts.github.com/404.html</loc>
+        <lastmod>2013-03-13T11:59:00+01:00</lastmod>
+    </url>
+    <url>
         <loc>http://spreecasts.github.com/blog/archives/</loc>
-        <lastmod>2013-03-08T15:52:15+01:00</lastmod>
+        <lastmod>2013-03-13T12:48:21+01:00</lastmod>
     </url>
     <url>
         <loc>http://spreecasts.github.com/</loc>
-        <lastmod>2013-03-08T15:52:15+01:00</lastmod>
+        <lastmod>2013-03-13T12:48:21+01:00</lastmod>
     </url>
     <url>
         <loc>http://spreecasts.github.com/robots.txt</loc>
-        <lastmod>2013-03-08T15:52:15+01:00</lastmod>
+        <lastmod>2013-03-13T11:59:00+01:00</lastmod>
     </url>
 </urlset>
