@@ -4,7 +4,7 @@
   <title><![CDATA[Category: spree-1-3 | SpreeCasts]]></title>
   <link href="http://spreecasts.github.com/blog/categories/spree-1-3/atom.xml" rel="self"/>
   <link href="http://spreecasts.github.com/"/>
-  <updated>2013-03-25T23:35:28+01:00</updated>
+  <updated>2013-03-26T08:48:39+01:00</updated>
   <id>http://spreecasts.github.com/</id>
   <author>
     <name><![CDATA[Peter Berkenbosch]]></name>
@@ -12,6 +12,37 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Episode 6 - Part 2 - Deploying]]></title>
+    <link href="http://spreecasts.github.com/blog/2013/03/25/episode-6-part-2-deploying/"/>
+    <updated>2013-03-25T23:38:00+01:00</updated>
+    <id>http://spreecasts.github.com/blog/2013/03/25/episode-6-part-2-deploying</id>
+    <content type="html"><![CDATA[<p>In this part I will deploy the webshop to <a href="http://www.digitalocean.com">Digital Ocean</a> using <a href="http://www.cloud66.com">Cloud66</a></p>
+
+<!-- more -->
+
+
+
+
+<iframe src="http://player.vimeo.com/video/62658736" width="850" height="478" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/62658736">EP6P2</a> from <a href="http://vimeo.com/peroictsolutions">PeRo ICT Solutions</a> on <a href="http://vimeo.com">Vimeo</a>.</p> <p>Part 2 in the &quot;From Scratch&quot; serie. Here we will deploy the spree webshop to DigitalOcean using Cloud66</p></p>
+
+<h2>Shownotes</h2>
+
+<p><a href="https://www.cloud66.com/help/manifest_files">Cloud66 Manifest files</a></p>
+
+<p>Deployment path:
+<code>
+/var/deploy/mtgspree/web_head/current
+</code>
+<a href='http://www.pledgie.com/campaigns/19597'><img alt='Click here to lend your support to: Improve Spreecasts and make a donation at www.pledgie.com !' src='http://www.pledgie.com/campaigns/19597.png?skin_name=chrome' border='0' /></a></p>
+
+<p><strong>Disclaimer: I have no affiliation with Cloud66 or Digital Ocean. I just like their products.</strong></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Episode 6 - part 1 - setup Spree 1-3-stable]]></title>
